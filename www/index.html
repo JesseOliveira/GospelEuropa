@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Radio Gospel Europa</title>
+    </head>
+    <body>   
+    		
+		<div class="about" onclick="about();"><img src="img/ico_about.svg" width="26" height="26"></div>
+
+	    <div id="app">
+	    	
+	    	<div id="headApp">Radio Gospel Europa</div>
+	    	
+	    	<div class="bodyApp">
+	    		
+	    		<div class="logo"><img width="250" src="img/logo_radio.png"></div>
+
+	    		<div class="midias">
+	    			
+	    			<div class="icon1">
+	    				<a href="" onClick="javascript: return openURL('https://www.facebook.com/italiagospelmusic/');"><img src="img/ico_face.svg" width="40" height="40"><p>facebook</p></a>
+		    		</div>
+
+	    			<div class="icon2">
+	    				<a href="" onClick="javascript: return openURL('https://www.instagram.com/prdanielvaron/');"><img src="img/ico_instagram.svg" width="40" height="40"><p>instagram</p></a>
+	    			</div>
+
+	    			<div class="icon3">
+	    				<a href="" onClick="javascript: return openURL('http://www.gospeleuropa.com/');"><img src="img/ico_www.svg" width="40" height="40"><p>site</p></a>
+	    			</div>
+
+	    		</div>
+
+	    		<div id="clear"></div>
+	    		
+	    	</div>
+	    	
+	    	<div id="footApp">
+	    		<div class="play" id="play" onclick="WebRadioPlay();">
+	    			<div class="" id="spin"></div>
+	    		</div>
+	    		<div class="time" id="time">00:00:00</div>
+	    		<div class="legenda" id="statusbar"> Play</div>
+	    	</div>
+
+	    	<audio id="webradio">
+                  <source src="" type="audio/mpeg">
+            </audio>
+
+	    </div>    	
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+              
+    </body>
+</html>

@@ -1,0 +1,39 @@
+* {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+html, body{height: 100%; overflow: hidden; background:#1e1e1e;}
+body{width:100%; height:100%; background:#1e1e1e url(../img/background.jpg) repeat 0 0; font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif; font-size:12px; margin:0px; padding:0px; color: #fff;}
+audio{display: none;}
+#app{width:100%; position:relative; margin:0 auto; min-height:100%; top: 0; left: 0;}
+* html #app{height: 100%;}
+#headApp{width: 100%; height: 30px; background: url('../img/bar.png') repeat 0 -5px; font-size: 16px; font-weight: bold; border-bottom: #fff solid 0px; padding: 15px 0 0 0; text-align: center;}
+#bodyApp{background: #000; margin: 0;}
+#footApp{position: absolute; bottom: 0; width: 100%; height: 80px; background: url('../img/bar.png') repeat 0 -5px; border-top: #fff solid 0px;}
+#clear{clear:both;}
+.play{width: 72px; height: 72px; background: url(../img/play.png); background-position: 0 0; margin: 5px 5px 0 5px; float: left;}
+.play:hover{background-position: -82px 0;}
+.stop{background-position: -164px 0; }
+.stop:hover{background-position: -246px 0;}
+.legenda{height:28px; margin: 30px 10px 0 82px; border:0; font-size: 18px;}
+.time{float: right; margin: 10px 10px 0 0;}
+.leng{background:transparent; width:100%!important; height:28px!important;}
+.logo {width: 300px;height: 120px;margin: 40px auto;text-align: center;}
+.logo img {width: 250px;height: auto;}
+.midias{width: 94%; margin: 0 auto;overflow: auto;}
+.icon1,.icon2,.icon3{display: block; width:31%; height: 65px; text-align: center; padding-top: 8px; font-weight: bold;background: url('../img/bar.png') repeat 0 -5px; float: left; border-radius: 9px 9px 9px 9px;-moz-border-radius: 9px 9px 9px 9px;-webkit-border-radius: 9px 9px 9px 9px;}
+.icon1 p,.icon2 p,.icon3 p{ margin:0; }
+.icon1 a,.icon2 a,.icon3 a,.icon1 a:link,.icon2 a:link,.icon3 a:link,.icon1 a:hover,.icon2 a:hover,.icon3 a:hover {text-decoration: none; color: #fff;}
+.icon2,.icon3{margin-left: 3.5%;}
+.spinner{display: block; width: 72px; height: 72px; background: url('../img/play.png') no-repeat -330px 0;-webkit-animation: playspin 3s infinite linear; -ms-animation: playspin 3s infinite linear; animation: playspin 3s infinite linear;}
+.about{z-index: 999; height: 26px; width: 26px; position: absolute; right: 9px;top: 9px;}
+
+@-webkit-keyframes playspin{
+    0%{-webkit-transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(360deg)}
+}
+@-ms-keyframes playspin{
+    0%{-ms-transform:rotate(0deg)}
+    100%{-ms-transform:rotate(360deg)}
+}
+@-keyframes playspin{
+    0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
+}
